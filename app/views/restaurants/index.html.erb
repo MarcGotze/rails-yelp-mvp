@@ -1,0 +1,9 @@
+<%= render "navbar" %>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <div class="card">
+    <li class="card-body"><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  </div>
+  <% end %>
+</ul>
